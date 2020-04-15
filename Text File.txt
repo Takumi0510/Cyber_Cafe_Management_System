@@ -1,1 +1,1 @@
-This is a text file
+*Instead of using MD files we can use .TXT files*
