@@ -1,6 +1,6 @@
-File displays the purpose and functions of the Login process module
+## File displays the purpose and functions of the Login process module
 
-Purpose:
+**Purpose:**
 
     It is the opening page to the system.
 
@@ -11,7 +11,7 @@ Purpose:
     If the user is authenticated, the system will proceed to the main menu.
 
 
-Functions:
+**Functions:**
 
 1. Log-in welcome page
 2. provide username
