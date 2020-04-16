@@ -1,3 +1,7 @@
+/*
+	This header file consists of the class NewAccount which contains various undefined functions used for creating new user accounts
+*/
+
 #ifndef NEWACCOUNT_H
 #define NEWACCOUNT_H
 
