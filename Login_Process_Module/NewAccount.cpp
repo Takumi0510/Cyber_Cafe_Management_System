@@ -1,4 +1,10 @@
-#include "NewAccount.h"
+/*
+	This is the implementation file for the NewAccount class in the NewAccount.h headerfile.
+	
+	This file is used to define the function definitions declared inside the NewAccount.h headerfile
+*/
+
+#include "NewAccount.h"			// This uses the NewAccount headerfile
 #include <string>
 #include <iostream>
 #include <stdlib.h>
@@ -7,12 +13,12 @@
 
 using namespace std;
 
-void NewAccount::getFirstName()
+void NewAccount::getFirstName()		// defines the function prompting the user's first name
 {
 	
 	cout << "Please Enter your name down below:" << "\n" << endl;
 	
-	Sleep(1500);
+	Sleep(1500);			// sleep function adds some loading time to the output
 	
 	cout << "First Name -> ";
 	cin >> firstName;
@@ -20,7 +26,7 @@ void NewAccount::getFirstName()
 	
 }
 
-void NewAccount::getLastName()
+void NewAccount::getLastName()		// defines the function prompting the user's last name
 {
 	
 	cout << "Last Name -> ";
@@ -29,29 +35,29 @@ void NewAccount::getLastName()
 }
 
 
-void NewAccount::welcomeSentence()
+void NewAccount::welcomeSentence()	// welcome sentence function is made out of a sentence including user first and last name
 {
 	
 	system("CLS");
 	cout << "Welcome, " << firstName << " " << lastName;
 	Sleep(3000);
-	system("CLS");
+	system("CLS");			// this is used for clear screen
 	
 }
 
 
-int NewAccount::getAge()
+int NewAccount::getAge()		// prompt user to input age
 {
 	
-	cout << "Year -> ";
+	cout << "Year -> ";		// ask for year
 	cin >> year;
 	cout << "\n";	
 	
-	cout << "Month -> ";
+	cout << "Month -> ";		// ask for month
 	cin >> month;
 	cout << "\n";
 	
-	cout << "Day -> ";
+	cout << "Day -> ";		// ask for day
 	cin >> day;
 	
 	system("CLS");
@@ -59,17 +65,17 @@ int NewAccount::getAge()
 	cout << "Please Enter y/n:  ";
 	
 	string response;
-	cin >> response;
+	cin >> response;		// ask for input
 	
 	if (response == "y")
 	{
-		if (year <= 2001)
+		if (year <= 2001)	// check if the user is above 18 years of age
 		{
 			cout << "Perfect! You have created a new account!";
 		}
 		else
 		{
-			cout << "Sorry, you have not met the age requirement to register.";
+			cout << "Sorry, you have not met the age requirement to register.";	// deny to register if age < 18
 		}
 	}
 	
