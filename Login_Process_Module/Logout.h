@@ -1,4 +1,8 @@
-#ifndef LOGOUT_H
+/*
+	This Logout.h header file is used for exitting the program
+*/
+
+#ifndef LOGOUT_H			// starts to define the header file
 #define LOGOUT_H
 
 #include <iostream>
@@ -9,11 +13,11 @@ using namespace std;
 class Logout
 {
 	private:
-		string response;
+		string response;	// this private variable is used for user inputs
 	
 	public:
-		void displayLogout_LoginPage();
-		void displayLogout_MainPage();
+		void displayLogout_LoginPage();		// logout option in the login page
+		void displayLogout_MainPage();		// logout option in the main menu
 	
 };
 
