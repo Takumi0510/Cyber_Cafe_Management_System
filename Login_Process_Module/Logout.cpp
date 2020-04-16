@@ -1,16 +1,18 @@
+/*
+	This implementation file is used for defining the logout features from the headerfile
+*/
+
 #include "Logout.h"
 #include <iostream>
 #include <stdlib.h>
-#include <windows.h>
 #include <string>
 
 using namespace std;
 
-void Logout::displayLogout_LoginPage()
+void Logout::displayLogout_LoginPage()	// this function is defining the exit function on the login screen
 {	
 	
 	system("CLS");
-	Sleep(500);
 	
 	cout << "You have chosen to log-out.";
 	cout << "\n\n Are you sure?	Please confirm.";
@@ -35,10 +37,9 @@ void Logout::displayLogout_LoginPage()
 }
 
 
-void Logout::displayLogout_MainPage()
-{
+void Logout::displayLogout_MainPage()	// this function is defining the exiting function on the main menu screen.
+{	
 	system("CLS");
-	Sleep(500);
 	
 	cout << "You have chosen to log-out.";
 	cout << "\n\n Are you sure?	Please confirm.";
