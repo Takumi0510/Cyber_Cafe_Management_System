@@ -82,20 +82,3 @@ int NewAccount::getAge()
 		NewAccount::getAge();
 	}
 
-	
-
-	
-}
-
-int main()
-{
-
-	NewAccount ryan;
-
-
-	ryan.getFirstName();
-	ryan.getLastName();	
-	ryan.welcomeSentence();
-	ryan.getAge();
-
-}
