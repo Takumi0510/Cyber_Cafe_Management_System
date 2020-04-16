@@ -8,7 +8,6 @@
 #include <string>
 #include <iostream>
 #include <stdlib.h>
-#include <windows.h>
 
 
 using namespace std;
@@ -17,9 +16,7 @@ void NewAccount::getFirstName()		// defines the function prompting the user's fi
 {
 	
 	cout << "Please Enter your name down below:" << "\n" << endl;
-	
-	Sleep(1500);			// sleep function adds some loading time to the output
-	
+		
 	cout << "First Name -> ";
 	cin >> firstName;
 	cout << endl;
@@ -40,7 +37,6 @@ void NewAccount::welcomeSentence()	// welcome sentence function is made out of a
 	
 	system("CLS");
 	cout << "Welcome, " << firstName << " " << lastName;
-	Sleep(3000);
 	system("CLS");			// this is used for clear screen
 	
 }
@@ -82,7 +78,6 @@ int NewAccount::getAge()		// prompt user to input age
 	else if (response == "n")
 	{
 		cout << "Sorry, please enter your age again.";
-		Sleep(1500);
 		system("CLS");
 		
 		NewAccount::getAge();
